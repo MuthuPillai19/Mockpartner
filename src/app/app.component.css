@@ -1,0 +1,37 @@
+.btn-customNav {
+    color: #fff;
+    background-color: #044740;
+    border-color: #044740;
+}
+
+.btn-customNav:hover {
+    color: #044740;
+    background-color: #fff;
+    border-color: #fff;
+}
+
+.btn-customNav:focus, .btn-customNav.focus {
+    box-shadow: 0 0 0 0.2rem rgba(4, 71, 64, 0.5);
+}
+
+.btn-customNav.disabled, .btn-customNav:disabled {
+    color: #fff;
+    background-color: #343a40;
+    border-color: #343a40;
+}
+
+.btn-customNav:not(:disabled):not(.disabled):active, .btn-customNav:not(:disabled):not(.disabled).active,
+.show > .btn-customNav.dropdown-toggle {
+    color: #fff;
+    background-color: #1d2124;
+    border-color: #171a1d;
+}
+
+.btn-customNav:not(:disabled):not(.disabled):active:focus, .btn-customNav:not(:disabled):not(.disabled).active:focus,
+.show > .btn-customNav.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.2rem rgba(52, 58, 64, 0.5);
+}
+
+.navbar-brand-custom-bold {
+    font-weight: bold;
+}
