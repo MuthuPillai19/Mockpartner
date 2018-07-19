@@ -1,0 +1,69 @@
+<div class="topParamSelector col-12" style="border: 2px solid">
+  <div class="row">
+    <div class="playerConfig_Header col-12">
+      <h5>
+          Player Configuration
+      </h5>
+    </div>
+    <div class="col-11">
+      <table class="table table-hover">
+        <tbody>
+          <tr>
+            <td>Player balance *: <br>
+              <small>logged in player balance in cents</small>
+            </td>
+            <td>
+              <input type="number" id="playerConfig_Balance" class="form-control" />
+            </td>
+          </tr>
+          <tr>
+            <td>Player request timeout *: <br>
+              <small>Timeout for every request for currently <br> 
+                  in player. Overrides Request timeout property<br>
+                  in Global configuration.</small>
+            </td>
+            <td>
+              <input type="number" id="playerConfig_Balance" class="form-control" />
+            </td>
+          </tr>
+          <tr>
+            <td>Player error *: <br>
+              <small>Error returned for every request for currently <br>
+                  logged in player. Overrides API calls errors <br>
+                  properties in Global configuration.</small>
+            </td>
+            <td>
+              <div class="btn-group btn-group-lg" role="group" aria-label="playerConfig_PlayerError">
+                <button type="button" class="btn btn-primary">No error</button>
+                <button type="button" class="btn btn-primary">HTTP 500</button>
+                <button type="button" class="btn btn-primary">Always Failure</button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>Player default currency *:
+            </td>
+            <td>
+              <select type="text" id="playerConfig_Currency" class="form-control" >
+                <option value="EUR">EUR</option>
+                <option value="USD">USD</option>
+                <option value="INR">INR</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+              <td>Player default language *:
+              </td>
+              <td>
+                <select type="text" id="playerConfig_Language" class="form-control" >
+                  <option value="en_GB">en_GB</option>
+                  <option value="en_US">en_US</option>
+                  <option value="bg_BG">bg_BG</option>
+                </select>
+              </td>
+            </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

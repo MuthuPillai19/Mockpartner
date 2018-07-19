@@ -1,7 +1,7 @@
-<div class="topParamSelector col-xs-3 col-lg-3">
+<div class="topParamSelector">
   <div>
-    <label class="col-xs-6 col-lg-5 custom-form-label">Language : </label>
-    <div class="col-xs-5 col-lg-6 labelSelectDiv">
+    <label class="col-6 col-6 custom-form-label">Language : </label>
+    <div class="col-5 col-5 labelSelectDiv">
       <select id="languagesList" class="form-control">
         <option selected = "" value="-1">Pick one</option>
         <option *ngFor = "let lang of languages" value="{{lang}}">{{lang}}</option>
@@ -9,8 +9,8 @@
     </div>
   </div>
   <div>
-    <label class="col-xs-6 col-lg-5 custom-form-label">Partner code : </label>
-    <div class="col-xs-5 col-lg-6 labelSelectDiv">
+    <label class="col-6 col-6 custom-form-label">Partner code : </label>
+    <div class="col-5 col-5 labelSelectDiv">
       <select id="partnerCodeList" class="form-control">
           <option selected = "" value="-1">Pick one</option>
           <option *ngFor = "let partnerCode of partnerCodes" value="{{partnerCode}}">{{partnerCode}}</option>
