@@ -9,6 +9,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { GamemodeselectorComponent } from './home/gamemodeselector/gamemodeselector.component';
 import { GlobalconfigpanelComponent } from './home/globalconfigpanel/globalconfigpanel.component';
 import { PlayerconfigpanelComponent } from './home/playerconfigpanel/playerconfigpanel.component';
+import { PlayerapipanelComponent } from './home/playerapipanel/playerapipanel.component';
 
 
 @NgModule({
@@ -19,6 +20,7 @@ import { PlayerconfigpanelComponent } from './home/playerconfigpanel/playerconfi
     GamemodeselectorComponent,
     GlobalconfigpanelComponent,
     PlayerconfigpanelComponent,
+    PlayerapipanelComponent,
   ],
   imports: [
     BrowserModule,

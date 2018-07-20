@@ -1,0 +1,71 @@
+<div class="topParamSelector col-12" style="border: 2px solid">
+  <div class="row">
+    <div class="globalConfig_Header col-12">
+      <h5>
+        Player/API calls errors and timeouts
+      </h5>
+      <small>
+        <mark>
+          Specify error/timeout which will be returned for every type of API request for currently logged in player.
+        </mark>
+      </small>
+    </div>
+    
+    <div>
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th>API request</th>
+            <th>Error</th>
+            <th>Reconcile</th>
+            <th>Reconcile Action</th>
+            <th>Required Display Time</th>
+            <th>Response message</th>
+            <th>Timeout [ms]</th>
+          </tr>            
+        </thead>
+        <tbody>
+          <tr>
+            <td>Authenticate Player</td>
+            <td>
+              <div class="btn-group-vertical btn-group-md" role="group" aria-label="playerAPI_Panel_Error">
+                <button type="button" class="btn btn-primary">No error</button>
+                <button type="button" class="btn btn-primary">HTTP 500</button>
+                <button type="button" class="btn btn-primary">Always Failure</button>
+              </div>
+            </td>
+            <td>
+              <div class="btn-group-vertical btn-group-md" role="group" aria-label="playerAPI_Panel_Reconclie">
+                <button type="button" class="btn btn-primary">True</button>
+                <button type="button" class="btn btn-primary">False</button>
+              </div>
+            </td>
+            <td>
+              <select type="text" id="playerAPI_ReconcileAction" class="form-control" >
+                <option value="NULL">NULL</option>
+                <option value="OK">OK</option>
+                <option value="EXIT">EXIT</option>
+              </select>
+            </td>
+            <td>
+              <select type="text" id="playerAPI_RequiredDisplayTime" class="form-control" >
+                <option value="NULL">NULL</option>
+                <option value="DIRECT">DIRECT</option>
+                <option value="END_OF_GAME">END_OF_GAME</option>
+              </select>
+            </td>
+            <td>
+              <input type="text" class="form-control" />
+            </td>
+            <td>
+              <input type="number" id="playerAPI_Timeout" class="form-control" value="0"/>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="playerAPI_Update">
+        <button class="btn btn-primary">Update</button>
+      </div>
+    </div>
+  </div>
+</div>
